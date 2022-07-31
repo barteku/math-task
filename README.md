@@ -1,4 +1,4 @@
-# Math task
+# Geometry calculator task
 
 Symfony app build to calculate area and circumference of Triangles and Circles<br/>
 Available routes:
