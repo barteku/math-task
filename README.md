@@ -1,3 +1,13 @@
+# Math task
+
+Symfony app build to calculate area and circumference of Triangles and Circles<br/>
+Available routes:
+1. /triangle/{a}/{b}/{c}
+2. /circle/{radius}
+<br/><br/>
+
+Calculator service available under `app.geometry_calculator`
+
 # Symfony Docker
 
 A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony](https://symfony.com) web framework, with full [HTTP/2](https://symfony.com/doc/current/weblink.html), HTTP/3 and HTTPS support.

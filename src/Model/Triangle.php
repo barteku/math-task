@@ -10,21 +10,21 @@ class Triangle extends Shape
 {
 
     /**
-     * @var int
+     * @var int $a
      *
      * @Groups({"request"})
      */
     public int $a;
 
     /**
-     * @var int
+     * @var int $b
      *
      * @Groups({"request"})
      */
     public int $b;
 
     /**
-     * @var int
+     * @var int $c
      *
      * @Groups({"request"})
      */
@@ -38,7 +38,7 @@ class Triangle extends Shape
      * @param int $b
      * @param int $c
      */
-    public function __construct(float $a, float $b, float $c) {
+    public function __construct(int $a, int $b, int $c) {
         $this->a = $a;
         $this->b = $b;
         $this->c = $c;

@@ -15,7 +15,7 @@ class Circle extends Shape
 {
 
     /**
-     * @var int
+     * @var int $radius
      *
      * @Groups({"request"})
      */
