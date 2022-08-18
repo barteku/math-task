@@ -6,7 +6,10 @@ Available routes:
 2. /circle/{radius}
 <br/><br/>
 
-Calculator service available under `app.geometry_calculator`
+Calculator service available under `app.geometry_calculator`<br/>
+Two methods available
+1. calculateSumOfAreas
+2. calculateSumOfCircumference
 
 # Symfony Docker
 
