@@ -23,7 +23,8 @@ class ShapeController extends AbstractController
      * @param int $c
      * @return JsonResponse
      */
-    public function triangle(SerializerInterface $serializer, int $a, int $b, int $c){
+    public function triangle(SerializerInterface $serializer, int $a, int $b, int $c): Response
+    {
 
         $triangle = new Triangle($a, $b, $c);
 
@@ -33,7 +34,7 @@ class ShapeController extends AbstractController
 
         $json = $serializer->serialize($triangle, 'json', $context);
 
-        return new Response($json);
+        return new Response($json, 200, ['Content-Type' => 'application/json']);
 
     }
 
@@ -46,7 +47,8 @@ class ShapeController extends AbstractController
      *
      * @return JsonResponse
      */
-    public function circle(SerializerInterface $serializer, int $radius){
+    public function circle(SerializerInterface $serializer, int $radius): Response
+    {
 
         $circle = new Circle($radius);
 
@@ -56,7 +58,7 @@ class ShapeController extends AbstractController
 
         $json = $serializer->serialize($circle, 'json', $context);
 
-        return new Response($json);
+        return new Response($json, 200, ['Content-Type' => 'application/json']);
 
 
     }
